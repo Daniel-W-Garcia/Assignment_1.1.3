@@ -128,7 +128,7 @@ public class UserInterface
         double area = formulas.TriangleArea(baseLength, height);
         
         Console.WriteLine($"\nThe area of the triangle is: {area}");
-        Console.WriteLine("\nPress any key to return to the main menu...");
+        Console.WriteLine("\nPress any key to return to the areas menu...");
         Console.ReadKey();
     }
     
@@ -143,7 +143,7 @@ public class UserInterface
         double area = formulas.SquareArea(side);
         
         Console.WriteLine($"\nThe area of the square is: {area}");
-        Console.WriteLine("\nPress any key to return to the main menu...");
+        Console.WriteLine("\nPress any key to return to the areas menu...");
         Console.ReadKey();
     }
     
@@ -159,7 +159,7 @@ public class UserInterface
         double area = formulas.RectangleArea(length, width);
         
         Console.WriteLine($"\nThe area of the rectangle is: {area}");
-        Console.WriteLine("\nPress any key to return to the main menu...");
+        Console.WriteLine("\nPress any key to return to the areas menu...");
         Console.ReadKey();
     }
     
