@@ -1,0 +1,66 @@
+Football Team
+
+
+Classes:
+
+ - People
+	- Players
+		- Methods:
+			- Assign position
+			- Record Injuries
+			- Personnel Data
+	- Coaches
+		- Methods:
+			- Personnel Data
+			- Assign Roles
+			- Track Certifications
+			- Track availability
+	- Medical
+		- Methods:
+			- Personnel Data
+			- Assign Roles
+			- Track Certifications
+			- Track Availability
+			- Track injuries by type
+
+- Equipment
+	- Personal
+		- Methods:
+			- Type
+			- Quantity by size
+			- Track lost equipment
+		
+	- Practice
+		- Methods
+			- On hand by type
+			- Submitted requests
+			- Track Broken equipment
+	- Transportation
+		- Methods:
+			- Organic to Team
+			- Range
+			- Cost
+			- Speed
+	- Classroom
+		- Methods:
+			- Track On Hand
+			- Track ordered
+			- Track broken
+			- Maintenance request
+			
+	- Medical
+		- Methods:
+			- Track on hand
+			- Track orders
+			- Forecast needs based on previous years/cycles
+
+- Budget
+	- Travel
+		- Methods
+			- Cost
+			- Percentage of annual budget
+	- Food
+		- Methods
+			- Cost
+			- Percentage of annual budget
+

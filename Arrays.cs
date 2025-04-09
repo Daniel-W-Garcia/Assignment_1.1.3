@@ -8,7 +8,6 @@ public class Arrays
     private double[] doublesArray = {2.4, 3.5, 4.6, 5.7, 6.8};
     private double[] reversedDoublesArray;
     
-    
     private string[,] twoDinmensionalArray = new string[5, 5];
     private string[,,] threeDimensionalArray = new string[5, 5, 5];
     private string[][] multiDimensionalArray = new string[5][];
@@ -122,7 +121,7 @@ public class Arrays
 
     public int[] ReverseArrayOfIntegers(int[] integersArray)
     {
-        int[] reversedIntArray = new int[integersArray.Length];   
+        int[] reversedIntArray = new int[integersArray.Length];
         for (int i = 0; i < integersArray.Length; i++)
         {
             reversedIntArray[i] = integersArray[integersArray.Length - i - 1];
@@ -167,4 +166,6 @@ public class Arrays
                 break;
         }
     }
+    
+    
 }
