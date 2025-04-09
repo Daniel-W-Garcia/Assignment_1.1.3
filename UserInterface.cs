@@ -3,10 +3,35 @@
 public class UserInterface
 {
     private Formulas formulas = new();
-    public void UserInterfaceLoop()
+    private Arrays arrays = new();
+    
+    bool exitProgram;
+
+    public void UserInterfaceToolSelection()
     {
-        bool exitProgram = false;
+        exitProgram = false;
+        Console.Clear();
+        Console.WriteLine("""
+                          What tool would you like to use?
+                          1. Area Calculator
+                          2. Create Arrays
+
+                          """);
         
+        string choice = Console.ReadLine();
+        
+        switch (choice)
+        {
+            case "1":
+                UserInterfaceLoopForAreas();
+                break;
+            case "2":
+                UserInterfaceLoopForArrays();
+                break;
+        }
+    }
+    public void UserInterfaceLoopForAreas()
+    {
         while (!exitProgram)
         {
             Console.Clear();
@@ -44,6 +69,51 @@ public class UserInterface
                     break;
             }
         }
+    }
+
+    public void UserInterfaceLoopForArrays()
+    {
+        while (!exitProgram)
+        {
+            Console.Clear();
+            Console.WriteLine("""
+                              Create Arrays
+                              ===============
+                              
+                              1. Populate a name array
+                              2. Get sum from an integer array
+                              3. Get sum from a double array
+                              4. Back to main menu
+                              5. Exit
+                              
+                              """);
+            Console.Write("\nEnter your choice (1-5): ");
+            
+            string choice = Console.ReadLine();
+
+            switch (choice)
+            {
+                case "1":
+                    arrays.PopulateNames(this);
+                    break;
+                case "2":
+                    arrays.SumOfAllIntegers();
+                    break;
+                case "3":
+                    arrays.SumOfAllDoubles();
+                    break;
+                case "4":
+                    UserInterfaceToolSelection();
+                    break;
+                case "5":
+                    exitProgram = true;
+                    break;
+                default:
+                    Console.WriteLine("Invalid choice. Press any key to try again.");
+                    Console.ReadKey();
+                    break;
+            }
+        } 
     }
     
     private void CalculateTriangleArea()
